@@ -1,0 +1,173 @@
+.listModule{
+	list-style:outside;
+	font-size:11px;
+	padding: 10px 20px;
+}
+.listModule img{
+	float:none !important;
+}
+#listModuleContent ol{
+	padding-left:40px;
+	padding-right:10px;
+}
+#listModuleRRContent ol{
+	padding-left:30px;
+	padding-right:10px;
+}
+.listModuleHeader {
+	padding: 20px 20px 0px;
+	height: 160px;	
+}
+.listModule li{
+	padding: 0px 0px 3px 0px;
+	margin:0px;
+	clear:both;
+}
+.listModule li hr{
+	margin:0px;
+	padding:5px 0 0 0;
+	border-bottom:1px solid #ccc;
+	border-top:0px;
+	border-left:0px;
+	border-right:0px;
+	line-height:0px;
+	height:1px;
+	display:block;
+	clear:both;
+
+}
+.listModule li a{
+	font-size:12px !important;
+	color:#06C;	
+}
+
+ol.ordered{
+	list-style-type:decimal;
+}
+.listModule .unordered{
+	list-style-type:none;
+}
+.listModule .title{
+	font-weight:bold;
+	padding:0px;
+	margin:0px;
+
+}
+.listModule .subTitle{
+margin:0px;
+}
+.listHeaderText {
+padding:3px 0px 3px 10px;
+margin:0px;
+font-size:12px;
+font-weight:bold;
+}
+.listHeaderImg {
+line-height:0px;
+padding:0px;
+margin:0px;
+}
+.showhidelist {
+	text-align:center;
+	/*padding:5px 0px 0px 2px;*/
+}
+.showhidelist a.collapsed {
+	/*background:url('www.siriusxm.com/sxm/img/expand_arrows.png') 284px -62px no-repeat; 
+	width:695px; */
+	background-image:url("/layout/img/button/SmallButton_White_140x25.png");
+	background-repeat:no-repeat;
+	background-position:center; 
+	font-weight:bold;
+	/*padding:2px;*/
+	margin-left:0px;
+	margin-top:3px;
+	display:block;
+	height:25px;
+	text-decoration:none;
+	color:#000;
+}
+.showhidelist a.expanded {
+	/*background:url('www.siriusxm.com/sxm/img/expand_arrows.png') 284px 0px no-repeat;
+	font-weight:bold;
+	padding:2px; 
+	width:695px;	*/
+	background-image:url("/layout/img/button/SmallButton_White_140x25.png");
+	background-repeat:no-repeat;
+	background-position:center; 
+	margin-left:0px;
+	display:block;
+	height:25px;
+	text-decoration:none;
+	color:#000;
+
+}
+.imgFloatRight {
+float: left;
+margin-right: 10px;	
+}
+.showhidelistRR {
+	text-align:center;
+	padding:5px 0px 0px 2px;
+}
+.showhidelistRR a.collapsed {
+	background:url('www.siriusxm.com/sxm/img/expand_arrows.png') 43px -62px no-repeat;
+	padding:2px;
+	font-weight:bold;
+	margin-left:10px;
+	display:block;
+	height:20px;
+	width:207px;
+	
+}
+.showhidelistRR a.expanded {
+	background:url('www.siriusxm.com/sxm/img/expand_arrows.png') 43px 0px no-repeat;
+	padding:2px;
+	font-weight:bold;
+	display:block;
+	height:20px;
+	width:207px;
+	
+}
+
+.module p.bluetext {
+	color:#0066CC;
+	font-size: 12px;
+}
+
+.sidebar .module p.bluetext {
+	font-size:11px;
+	color:#0066CC;
+	line-height:1.5em;
+	display:block;
+	/*background:#fff;*/
+}
+
+.module-bot-border-list ul {
+	display:block;
+}
+
+.module-bot-border-list li.first{
+	height:auto;
+	margin-top:0px;
+	padding-bottom:5px;
+}
+
+.module-bot-border-list li {
+	display:block;
+	height:auto;
+	border-bottom:1px #eee solid;
+	padding:0px 0px 8px 0px;
+	margin-top:8px;
+	/*padding-bottom:5px;*/
+}
+
+.module-bot-border-list li.last{
+	border-bottom:none;
+	padding:0px;
+	height:auto;
+}
+
+ul.unordered {
+	list-style-type:none;
+
+} 

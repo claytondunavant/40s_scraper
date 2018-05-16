@@ -1,0 +1,83 @@
+/*Color Theme Default */
+/*Header Background*/
+.header-color-bg {
+background-color:#000000;
+}
+.twtr-widget-1, .twtr-doc, .twtr-ft {
+	background-color:#004871 !important;
+}
+/*Primary Color Background*/
+.theme-color-primary {
+background-color:#6c5735;
+}
+
+.sidebar .theme-color-header-bg {
+	background-image:url(/sxm/css/themes/40s/rr-header.png);
+background-repeat:no-repeat;
+}
+
+.contentRR .theme-color-header-bg {
+	background-image:url(/sxm/css/themes/40s/center-header-primary.png);
+background-repeat:no-repeat;
+}
+
+.theme-color-header-rr {
+	background-image:url(/sxm/css/themes/40s/rr-header.png);
+background-repeat:no-repeat;
+}
+
+.theme-color-header-primary-center {
+	background-image:url(/sxm/css/themes/40s/center-header-primary.png);
+background-repeat:no-repeat;
+}
+
+.theme-color-header-secondary-center {
+	background-image:url(/sxm/css/themes/40s/center-header-secondary.png);
+background-repeat:no-repeat;
+}
+
+/*Secondary Color Background*/
+.theme-color-secondary {
+background-color:#b9a586;
+}
+
+/*Content Color Background*/
+.theme-color-content-bg {
+background:#fff;
+}
+
+/*Title Color*/
+.theme-color-header {
+color:#fff !important;
+}
+
+/*Link Color*/
+.channel-page a {
+color:#bb6d22;
+}
+
+/*Visited Link Color*/
+.sidebar .rr-nav  a:hover {
+color:#764516;
+}
+
+.SXM_SubNav  a:hover {
+color:#fff;
+}
+
+/*Arrows*/
+.theme-arrow {
+	background-image:url("rr-nav-arrow.png");
+}
+
+.ie6 .theme-arrow {
+    background-image:url("rr-nav-arrow-ie.png");
+}
+
+.theme-hor-divide {
+background-image:url("divider.png");
+}
+
+.theme-ver-divide {
+background-image:url("vDivider.png");
+}

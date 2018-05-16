@@ -1,0 +1,367 @@
+/* New tabs */
+	
+	.ota-tablist {
+		background: #fff;
+	}
+	
+	.tablist{
+		border-bottom: 3px #1295E8 solid;
+		height:30px;
+		margin:0px 20px;
+	}
+	
+	.tablist ul {
+		list-style:none; 
+		height:28px;
+		padding:0; 
+		margin:0; 
+	}
+	
+	.tablist li {
+		float:left; 
+		margin-right:1em; 
+		height:28px;
+		width: 120px;
+		display: none;
+	}
+	
+	.tablist li a {
+		display:block;
+		padding:8px;
+		text-decoration:none;
+		color:#fff;
+		background-color:#a3a3a3;
+		text-align: center;
+		z-index: -1;
+		height: 14px;
+	
+		/* CSS 3 elements */
+		webkit-border-top-right-radius:0.50em;
+		-webkit-border-top-left-radius:0.50em;
+		-moz-border-radius-topright:0.50em;
+		-moz-border-radius-topleft:0.50em;
+		border-top-right-radius:0.50em;
+		border-top-left-radius:0.50em;
+	}
+	
+	.tablist li a:hover {
+		background:#c4c4c4; 
+		color:#fff;
+		text-decoration:none;
+	}
+	.tablist li.current a, .tablist li a:active {
+		background-color: #1295E8;
+		color: #fff;
+		z-index: 999;
+	}
+	
+	/* end new tabs */
+	
+	#on-the-air-loader{
+		/*display: none;*/
+		height: 300px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		background-image:url(/sxm/img/global/loading_5.gif);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-color: #fff;
+	}
+	#on-the-air-unavailable{
+		display: none;
+		height: 80px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: #fff;
+	}
+	#on-the-air-unavailable p, span.no-schedule-info {
+		padding-top: 30px;
+		font-size: 12px;
+		font-weight: bold;
+		text-align: center;
+	}
+	#on-the-air-content{
+		display: none;
+	}
+	#show-schedules div.module-content{
+		visibility: hidden;
+		display: none;
+		top:0px;
+		position:relative;
+	}	
+	ul.showday-tabs{
+		display: inline;
+		width: 100%;
+		padding-left: 20px;
+	}
+	ul.showday-tabs li {
+        display: -moz-inline-stack;
+		display: inline-block;
+		min-height:34px;
+		vertical-align: top;		
+		zoom: 1;
+        *display: inline;
+        _height: 34px;
+        height:34px;
+		border: 1px solid #666;
+		border-radius: 10px;
+		margin-right:8px;
+		width:90px;		
+		font-size: 12px;
+		font-weight: bold;
+		text-align: center;
+		padding-top:3px;
+	}
+	ul.showday-tabs li:hover {
+		cursor: pointer;
+	}
+	
+	ul.showday-tabs li.current a {
+	color: white;
+	}
+
+	ul.showday-tabs li a {
+		/*color: #5C0913;*/
+		text-decoration: none;
+	}
+	ul.showday-tabs li a span {		
+		font-size: 11px;
+		font-weight: normal;
+	}	
+	#show-schedules div.module-content div.shows span.show{		
+		padding: 15px 0 15px 0;
+		border-bottom: 1px #ccc solid;
+	}
+	.module .module-content .shows .title {
+		display: inline;
+	}
+	#show-schedules div.module-content .shows .title{
+		margin-left: 3px;
+	}
+	#shows-schedules-content a.weekly-schedule-link {
+		float: right;
+		margin-right: 20px;
+	}
+	#shows-schedules-content{
+	}
+	#highlights-content{
+		display: none;
+	}	
+	#highlights-list .highlight div.highlight {
+	    border-bottom: 1px solid #EEEEEE;
+	    margin-bottom: 10px;
+	    padding-bottom: 10px;
+	}
+	#shows-content{
+		display: none;
+	}
+	#hosts-content{
+		display: none;
+	}
+	.onair-timezone-platform {		
+		margin-left: 380px; /* IE bug */
+		display: inline;
+	}
+	.onair-timezone-label, .onair-platform-label{
+		font-size: x-small;
+		margin-left: 10px;
+	}
+	.onair-timezone, .onair-platform{		
+		font-weight: bold;
+		margin-right: 10px;
+		font-size: x-small;
+	}
+	a.onair-timezone, a.onair-platform{
+		color: #fff;
+	}
+
+	#onair-pdt{
+		width: 210px;
+		min-height: 76px;
+		float:left;
+		display: none;
+		margin-right: 15px;
+	}
+	#onair-pdt p.onair-pdt-artist, #onair-pdt p.onair-pdt-song{
+		color:#000;
+		font-size:12px;
+		line-height:1.5em;
+		word-wrap: break-word;
+		text-align: left;
+		width: 120px;		
+	}
+	#onair-pdt p.onair-pdt-artist{
+		font-weight:bold;
+		float: right;
+		word-wrap:break-word;
+	}
+	#onair-pdt p.onair-pdt-song{		
+		float: right;
+		word-wrap:break-word;
+	}
+	#onair-pdt img {
+		float: left;		
+		max-height: 76px;
+		max-width: 76px;
+		margin-right: 5px;
+	}
+	#onair-show{
+		width: 480px;		
+		min-height: 76px;
+		float: left;
+		display: none;
+	}
+	#onair-show span.show{
+		float: right;
+	}	
+	span.rebroadcasts{
+		font-size: 90%;
+		color:#000;
+	}
+	.channel-tabs-content{
+		padding: 10px 0px;
+		position: relative;
+		background: white;
+	}
+
+	div.module-content div.showhide{
+		width: 100%;
+		height: 30px;
+		text-align: center;
+		padding-top: 20px;
+	}
+	div.module-content div.showhide div.button{
+		margin-left:auto;
+		margin-right:auto;
+		text-align: center;
+		height:25px;
+		width:140px;
+		background-image:url(/layout/img/button/SmallButton_White_140x25.png);
+		cursor: pointer;
+	}	
+	div.module-content div.showhide span{
+		color: black;
+		font-size: 12px;
+		line-height: 1.5em;
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+	div.shows div.show, div.highlights div.show {
+	    border-bottom: 1px solid #CCCCCC;
+	    padding: 15px 0;
+	}
+
+
+	/*what's on fav icon classes */
+	.show a.channel-favorite {
+	  background: url("../img/global/icons.png") no-repeat scroll 0 0;
+	  display: inline-block;
+	  height: 3px;
+	  margin: 0 0 -2px;
+	  width: 18px;
+	}
+
+	.show a.channel-favorite{
+	    background-position:0 -65px;
+	}
+
+	.show a.channel-favorite:hover {
+	    background-position:0 -91px !important;
+	}
+
+	.show a.channel-favorite-active:hover,
+	.show a.channel-favorite-active{
+	    background-position:0 -39px !important;
+	}
+
+	/* SSH - overlays */
+    .tooltip .tooltip-top {
+                    position:relative;
+                    width:251px;
+                    height:14px;
+                    background:url(/sxm/img/global/tooltip.png) no-repeat left top;
+                    left:-55px;
+    }
+    .tooltip .tooltip-content {
+                    position:relative;
+                    background:url(/sxm/img/global/tooltip-bg.png) repeat-y;
+                    width:251px;
+                    padding:2px 20px 2px 20px;
+                    left:-55px;
+    }
+    .tooltip .tooltip-bottom {
+                    position:relative;
+                    height:26px;
+                    width:251px;
+                    background:url(/sxm/img/global/tooltip.png) no-repeat left -14px;
+                    left:-55px;
+    }
+    .tooltip p {
+                    width:180px; padding:0 10px 0 10px; left:-90px;
+    }
+    .show-tooltip-content p{
+    	text-align: center;
+    }
+    .tooltip a.tooltip-link-inactive{
+    	color:#000;
+    	text-decoration: none;
+    	cursor: default;
+    }
+
+.ui-tooltip {
+    position: absolute !important;
+    z-index: 3000 !important;
+    border: 1px solid #999999 !important;
+    background-color: #ffffcb !important;
+    padding: 5px !important;
+    -moz-box-shadow: 1px 1px 4px #333 !important;
+    -webkit-box-shadow: 2px 2px 6px #333 !important;
+    box-shadow: 2px 2px 6px #333 !important;
+    max-width:200px !important;
+	border-radius: 4px;
+	color:#000 !important;
+}
+
+/*.ui-tooltip, .arrow:after {
+background: black;
+border: 2px solid white;
+}
+
+.arrow {
+width: 70px;
+height: 16px;
+overflow: hidden;
+position: absolute;
+left: 50%;
+margin-left: -35px;
+bottom: -16px;
+}
+.arrow.top {
+top: -16px;
+bottom: auto;
+}
+.arrow.left {
+left: 20%;
+}
+.arrow:after {
+content: "";
+position: absolute;
+left: 20px;
+top: -20px;
+width: 25px;
+height: 25px;
+box-shadow: 6px 5px 9px -9px black;
+-webkit-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+.arrow.top:after {
+bottom: -20px;
+top: auto;
+}
+ */
+
+
