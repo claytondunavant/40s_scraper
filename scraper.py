@@ -1,8 +1,8 @@
-from requests import get
-import json
+import requests
 
 #define URL that will be requested
-url = 'https://www.siriusxm.com/40sJunction' #url you want to grab
+#url = 'https://www.siriusxm.com/40sJunction' #url you want to grab
+url = 'https://www.siriusxm.com/metadata/pdt/en-us/json/channels/8205/timestamp/05-23-01:03:00'
 
 #define the headers for the reqest of the JSON file
 #taken from network inspecting the webpage
@@ -17,7 +17,10 @@ headers = {
 'Connection' : 'keep-alive'
 }
 
-response = get(url) #request page and grab HTML
+r = requests.get(url, headers = headers) #request page and grab HTML
 
-json = response.json()
+print('status code: ' + str(r.status_code))
 
+json = r.json()
+
+print(json)
