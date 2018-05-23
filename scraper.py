@@ -2,7 +2,7 @@ import requests, json, datetime
 
 def get_current_song(): #gets song artist, album and name
     json_time = datetime.datetime.now(datetime.timezone.utc).strftime('%m-%d-%H:%M:00') #website uses UTC in this format for the json files that are updated at the top of every minute
-
+    print(json_time)
     url = "https://www.siriusxm.com/metadata/pdt/en-us/json/channels/8205/timestamp/" + str(json_time) #the json url of the current song playing 
  
     r = requests.get(url) #request page and grab HTML
