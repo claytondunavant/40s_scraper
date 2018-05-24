@@ -34,10 +34,29 @@ def song_to_xlsx(song):
     sheet['C' + row].value = song[2] #write song in comlumn c
     wb.save('songs.xlsx') #Save workbook
 
+def column_to_list(column):
+    output = []
+    wb = openpyxl.load_workbook('songs.xlsx') #open song workbook
+    sheet = wb['Sheet1'] #open sheet one
+ 
+    for i in range(sheet.max_row - 1):
+        output.append(sheet[str(column)+str(i+2)].value)
+
+    return output
+
+used_songs = column_to_list('C')
 exit = False
+
+print(used_songs)
 
 while exit == False: #while exit is not true
     if datetime.datetime.now(datetime.timezone.utc).strftime('%S') == '00': #if it is the top of the minute
-        song_to_xlsx(get_current_song())
-        print(get_current_song())
+        if get_current_song()[2] in used_songs:
+            print('song has been recorded')
+        else:
+
+            song_to_xlsx(get_current_song())
+            print(get_current_song())
+            used_songs.append(get_current_song()[2])
+            print(used_songs)
         time.sleep(59)
