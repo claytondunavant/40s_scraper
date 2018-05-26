@@ -27,8 +27,8 @@ def tag_file(fname, row): #tag the mp3 files with their name, artist and album
         tags = ID3()
 
     tags["TIT2"] = TIT2(encoding=3, text=str(fname))
-    tags["TALB"] = TALB(encoding=3, text=str(sheet['B'+str(row)].value))
-    tags["TPE1"] = TPE1(encoding=3, text=str(sheet['A'+str(row)].value))
+    tags["TALB"] = TALB(encoding=3, text='40sRadio')
+    #tags["TPE1"] = TPE1(encoding=3, text=str(sheet['A'+str(row)].value))
 
     tags.save(fname)
 
@@ -38,7 +38,7 @@ last_downloaded_row = int(input('What was the last downloaded row?: ')) #sets wh
 
 for i in range(last_downloaded_row + 1, sheet.max_row + 1): #from the one above the last downloaded till the last song
     youtube_dl.YoutubeDL(ydl_opts).download([str(sheet['E' + str(i+1)].value)]) #download the video
-    file_name = str(sheet['C' + str(i+1)].value) + '.mp3' #set the file name
+    file_name = str(sheet['C' + str(i+1)].value) + " - " + str(sheet['A' +str(i+1)].value) + '.mp3' #set the file name
     new_files = os.listdir() #look at all the files in downloads
     for o in range(len(new_files)): #for all the file in downloads
         if new_files[o] in old_files: #if the file was in there before, do no thing
