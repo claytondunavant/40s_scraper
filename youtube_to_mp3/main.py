@@ -26,9 +26,9 @@ def tag_file(fname, row): #tag the mp3 files with their name, artist and album
         print("Adding ID3 header;"),
         tags = ID3()
 
-    tags["TIT2"] = TIT2(encoding=3, text=str(fname))
+    tags["TIT2"] = TIT2(encoding=3, text=fname)
     tags["TALB"] = TALB(encoding=3, text='40sRadio')
-    #tags["TPE1"] = TPE1(encoding=3, text=str(sheet['A'+str(row)].value))
+    tags["TPE1"] = TPE1(encoding=3, text='40sRadio')
 
     tags.save(fname)
 

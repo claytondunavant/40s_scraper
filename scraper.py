@@ -15,6 +15,8 @@ def get_current_song(): #gets song artist, album and name
 
         json = r.json() #get the json file from the request and decode it
 
+        print(json['channelMetadataResponse'])
+    
         json_dicts= json['channelMetadataResponse']['metaData']['currentEvent'] #json dictonarys containing all the info
         artist = json_dicts['artists']['name'] #grab the name
         album = json_dicts['song']['album']['name'] #grab album
