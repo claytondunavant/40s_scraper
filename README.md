@@ -1,5 +1,5 @@
 # 40s_scraper
-![alt-text](http://www.essexmobiledisco.co.uk/images/40s.jpg)
+![alt-text](https://images-na.ssl-images-amazon.com/images/I/515VwQP5F6L._SX355_.jpg)
 
 ### Introduction
 
