@@ -1,5 +1,5 @@
 # 40s_scraper
-![alt-text](https://i.scdn.co/image/a86e2dc01850beb3a3d1100b731b80c8f8c862a5)
+![alt-text](http://www.essexmobiledisco.co.uk/images/40s.jpg)
 
 
  Welcome to my first somewhat legit Github project.  
