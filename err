@@ -1,7 +1,0 @@
-Traceback (most recent call last):
-  File "scraper.py", line 59, in <module>
-    if song_id_gen(get_current_song()) in used_songs: #if the songs id has been used before, dont record it 
-  File "scraper.py", line 16, in get_current_song
-    json_dicts= json['channelMetadataResponse']['metaData']['currentEvent'] #json dictonarys containing all the info
-KeyError: 'metaData'
-
