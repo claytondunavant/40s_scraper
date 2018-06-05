@@ -15,8 +15,6 @@ def get_current_song(): #gets song artist, album and name
 
         json = r.json() #get the json file from the request and decode it
 
-        print(json)
-
         if json['channelMetadataResponse']['messages']['code'] == 305:
             return 'request did not go through'
         else:
@@ -48,6 +46,7 @@ def song_to_xlsx(song):
     wb = openpyxl.load_workbook('songs.xlsx') #open song workbook
     sheet = wb['Sheet1'] #open sheet one
     row = str(sheet.max_row + 1) #row to right on is one greater than the last written one
+    print(row)
 
     sheet['A' + row].value = song[0] #write artist in column a
     sheet['B' + row].value = song[1] #write album in column b
